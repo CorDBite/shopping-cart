@@ -15,8 +15,8 @@ we will Cover following section in this Series
 - [Install a New Laravel Project](http://cordbite.com/how-to-setup-new-laravel-with-xampp-windows)
 - [Data Migration](http://cordbite.com/build-a-shopping-cart-in-laravel-part-2) 
 - [Data Seeding](http://cordbite.com/build-a-shopping-cart-in-laravel-part-2#seeding)
-- Out Products Listing (http://cordbite.com/build-a-shopping-cart-in-laravel-part-3)
-- Authenticaion in Laravel and Middlewares in Laravel
+- [Output Products Listing](http://cordbite.com/build-a-shopping-cart-in-laravel-part-3)
+- [Authenticaion in Laravel](http://cordbite.com/build-a-shopping-cart-in-laravel-part-4)
 - Managing Cart
 - Getting Payment with Stripe
 - Makking and Order

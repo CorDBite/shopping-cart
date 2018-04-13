@@ -21,12 +21,30 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Cart</a>
           </li>
+          @if (Auth::guest())
+          <li class="nav-item">
+            <a href="{{ route('login') }}" class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('register') }}" class="nav-link">Register</a>
+          </li>
+                        @else
 
-          
+         <li class="nav-item">
+            <a href="{{ route('home') }}" class="nav-link">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">logout</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>
+        </li>
+        @endif
   
         </ul>
     </div>
 </nav>
+
 <div class="wrapper container border">
 <div class="desc">
     <h1>All Products Listing</h1>
@@ -64,6 +82,5 @@
     @endif
 </div>
 </div>
-
 </body>
 </html>
